@@ -1,6 +1,6 @@
 <template>
   <div>
- <Header />
+  <Header />
   <Sudoku />
   <Footer />
   </div>

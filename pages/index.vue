@@ -6,7 +6,7 @@
 
 <template>
   <div>
-    <component :is="page" />
+    <component :test="test" :is="page" />
   </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
   name: 'IndexPage',
   data() {
     return {
-       page:"HomeScreen"
+       page:"HomeScreen",
+      test: "page"
     }
   },
 }

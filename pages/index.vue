@@ -1,24 +1,23 @@
+<script setup>
+  const page = ref("HomeScreen")
+
+</script>
+
+
 <template>
   <div>
-
-  <Header />
-
-  <Sudoku />
-
-  <Footer />
-
+    <component :is="page" />
   </div>
 </template>
 
 
 
 <script>
-
 export default {
   name: 'IndexPage',
   data() {
     return {
-      showSudoku: false
+       page:"HomeScreen"
     }
   },
 }

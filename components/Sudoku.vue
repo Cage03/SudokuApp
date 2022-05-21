@@ -9,7 +9,8 @@ export default {
   name: "Sudoku",
   data: () => ({
     name: "Sudoku",
-  })
+  }),
+
 }
 </script>
 

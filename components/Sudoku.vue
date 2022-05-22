@@ -3,12 +3,15 @@
     {{name}}
     <div class="sudoku-container">
       <div class="sudoku-grid">
+        <!--todo replaced by sudoku components-->
         <!--Contains row and block, used to generate divs from code -->
-        <div class="sudoku-blocks-container" style="visibility:hidden;">
-          <div class="sudoku-row"></div>
-          <div class="sudoku-block">
-            <p></p>
-          </div>
+        <div class="sudoku-blocks-container">
+<!--          <div class="sudoku-row"></div>-->
+<!--          <div class="sudoku-block">-->
+<!--            <p></p>-->
+<!--          </div>-->
+<!--          todo style the components -->
+          <Row   v-for="nr in 9" key="int" :number="nr"/>
         </div>
       </div>
     </div>
@@ -46,13 +49,22 @@
 </template>
 
 <script>
+
+
+import Row from "./Sudoku/Row";
 export default {
   name: "Sudoku",
+  components: {Row},
   data: () => ({
     name: "Sudoku",
   }),
 
 }
+
+function generateGrid(){
+  $()
+}
+
 </script>
 
 <style scoped>

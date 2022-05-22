@@ -2,7 +2,7 @@
 <div>
   <p>HomeScreen {{test}}</p>
 
-<!--  <button @click="page.value='Sudoku'"></button>-->
+  <button @click="()=>{testfunction()}">test</button>
 </div>
 </template>
 
@@ -10,7 +10,8 @@
 export default {
   name: "HomeScreen",
   props:{
-    test:"123"
+    test:"test",
+    testfunction:()=>{alert(nope)}
   }
 }
 </script>

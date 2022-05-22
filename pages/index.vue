@@ -1,12 +1,6 @@
-<script setup>
-  const page = ref("HomeScreen")
-
-</script>
-
-
 <template>
   <div>
-    <component :test="test" :is="page" />
+    <component :testfunction="testfunction" :test="test" :is="page" />
   </div>
 </template>
 
@@ -17,9 +11,14 @@ export default {
   name: 'IndexPage',
   data() {
     return {
-       page:"HomeScreen",
-      test: "page"
+       page:"Sudoku",
+      test: "page",
     }
   },
+  methods: {
+    testfunction() {
+      alert("testfunction")
+    }
+  }
 }
 </script>
